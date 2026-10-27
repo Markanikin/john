@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+:root {
+    --text-color: #21243D;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    margin: 0 auto;
+    width: 375px;
+    padding: 0 16px;
+}
+
+body {
+    font-family: 'Heebo';
+    color: var(--text-color);
+}
+
+@media (max-width: 869px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #a1a1a1;
+        width: 100%;
+        height: 350px;
+    }
+}
+
+.menu.is-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item>a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29.38px;
+    color: #000000;
+}
+
+.menu-button {
+    width: 30px;
+    height: 18px;
+    top: 20px;
+    right: 18px;
+    position: absolute;
+    background-color: #000000;
+}
+
+.john-img {
+    width: 170.86px;
+    height: 170.86px;
+}
+
+.hero>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 34px;
+}
+
+.hero-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: center;
+    margin-top: 21px;
+
+}
+
+.hero-button {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29.38px;
+    text-align: center;
+    background-color: #FF6464;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 27px;
+    margin-left: 83px;
+    margin-right: 83px;
+    width: 208px;
+    height: 47px;
+}
+
+.posts {
+    background-color: #EDF7FA;
+    padding-bottom: 38px;
+}
+
+.posts-title,
+.featured-works {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 59px;
+}
+
+.view_all {
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: right;
+    color: #00A8CC;
+}
+
+.post-title,
+.featured-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.post-text,
+.featured-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: left;
+}
+
+.post-date {
+    display: flex;
+    margin-top: 12px;
+    gap: 24px;
+}
+
+.post-text:nth-child(1)::after {
+    content: "";
+    border: 1px solid #000000;
+    height: 21px;
+    margin-left: 24px;
+}
+
+.post>.post-text {
+    margin-top: 19px;
+}
+
+.post {
+    margin-top: 29px;
+    background-color: #FFFFFF;
+}
+
+.featured-date {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 60px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #142850;
+    border-radius: 16px;
+    width: 62px;
+    height: 25px;
+    display: flex;
+}
+
+.featured-topic {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: left;
+    color: #8695A4;
+}
+
+
+
+.featured-works {
+    font-family: Heebo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+
+}
+
+.img-featured {
+    width: 339px;
+    height: 230px;
+}
+
+.featured-title {
+    font-family: Heebo;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 17px;
+}
+
+.featured-info {
+    display: flex;
+    gap: 22px;
+    margin-top: 16px;
+}
+
+.featured-text {
+    margin-top: 25px;
+}
+
+@media (max-width:869px) {
+    .featured-item:nth-child(n+2) {
+        display: none;
+    }
+}
+
+@media (min-width:870px) {
+    .container {
+        width: 870px;
+    }
+
+    .menu-list {
+        display: flex;
+        justify-content: right;
+        gap: 33px;
+        margin-right: 60px;
+    }
+
+    .menu-item>a {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29.38px;
+        padding: 27px 0px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .hero>.container {
+        flex-direction: row-reverse;
+        gap: 115px;
+    }
+
+    .hero-title {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        width: 506px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+        width: 496px;
+    }
+
+    .posts-main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .posts-title {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .view_all {
+        display: block;
+    }
+
+    .post {
+        width: 418px;
+        display: inline-block;
+        padding-left: 23px;
+        padding-top: 24px;
+
+    }
+
+    .post:first-child {
+        margin-right: 20px;
+    }
+
+    .post-title {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 38.19px;
+        text-align: left;
+    }
+
+    .post-date {
+        width: 374px;
+        margin-top: 17px;
+    }
+
+    .post-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        width: 368px;
+        margin-top: 11px;
+        margin-bottom: 7px;
+    }
+
+    .featured-works {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: left;
+    }
+
+    .featured-item {
+        display: flex;
+        margin-top: 48px;
+    }
+
+    .featured-title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 44.06px;
+    }
+
+    .featured-info {
+        margin-top: 16px;
+        gap: 26px;
+    }
+
+    .post-thumb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 48px;
+    }
+
+    .featured-date {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 60px;
+        text-align: left;
+        width: 42px;
+        padding: 0px 10px;
+    }
+
+    .featured-topic {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29.38px;
+    }
+
+    .featured-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+    }
+
+    .featured-main {
+        margin-left: 18px;
+    }
+}
